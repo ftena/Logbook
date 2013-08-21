@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Logbook</string>
+    <string name="details_activity">Details</string>
+    <string name="action_settings">Settings</string>
+    <string name="default_text">Default text</string>
+    <string name="finder">Type a log</string>
+    <string name="imgdesc">Image for this entry</string>
+
+</resources>

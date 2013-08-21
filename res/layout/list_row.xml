@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"    
+    android:orientation="horizontal">
+ 
+    <!--  ListRow Left sied Thumbnail image -->
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true">
+ 
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:src="@drawable/shield"
+            android:contentDescription="@string/imgdesc"/>
+ 
+    </LinearLayout>
+ 
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="@string/default_text"        
+        android:textSize="12sp"
+        android:textStyle="bold"/>
+ 
+    <!-- Text -->
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:textSize="12sp"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="@string/default_text" />
+ 
+    <!-- Date -->
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/title"
+        android:gravity="right"
+        android:text="@string/default_text"        
+        android:textSize="12sp"/>
+ 
+</RelativeLayout>

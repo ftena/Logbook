@@ -38,9 +38,9 @@ public class LogListAdapter extends BaseAdapter {
          // to findViewById() on each row.
 	  ViewHolder holder;
 	  
-	// When convertView is not null, we can reuse it directly, there is no need
-      // to reinflate it. We only inflate a new View when the convertView supplied
-      // by ListView is null.
+	  // When convertView is not null, we can reuse it directly, there is no need
+	  // to reinflate it. We only inflate a new View when the convertView supplied
+	  // by ListView is null.
       if (convertView == null) {	  
 	   convertView = mInflater.inflate(R.layout.list_row, null);
 	   holder = new ViewHolder();
